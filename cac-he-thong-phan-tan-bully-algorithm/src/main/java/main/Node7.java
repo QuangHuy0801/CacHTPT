@@ -128,7 +128,7 @@ public class Node7 extends javax.swing.JFrame {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel2.setText("Thông báo");
 
-        cbReceiveMoneyId.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbReceiveMoneyId.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1","Item 2", "Item 3","Item 4", "Item 5", "Item 6", "Item 7","Item 8" }));
 
         tfMoneyValue.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -297,7 +297,7 @@ public class Node7 extends javax.swing.JFrame {
         } else {
             //#sua
             this.sv = new server(this, 3007, 7, this.tpLog, this.tpChatbox, this.tfAccountMoney, this.btnSendMoney);
-            for (int i = 0; i < 5; i++) {
+            for (int i = 0; i < 8; i++) {
                 if (i != this.sv.getId()) {
                     this.cbReceiveMoneyId.addItem(String.valueOf(i));
                 }
